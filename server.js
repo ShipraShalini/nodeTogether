@@ -3,8 +3,8 @@
  */
 var index = require('./app');
 
-var host = '0.0.0.0';
-var port = '8080';
+var host = process.env.HOST;
+var port = process.env.PORT;
 
 var express = require('express');
 var app = express();
